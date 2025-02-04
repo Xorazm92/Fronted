@@ -305,11 +305,7 @@ body {
     box-shadow: 0 6px 8px rgba(0, 130, 244, 0.3);
 }
 
-
-
-
 /* About Us Section */
-
 
 .container {
     max-width: 1240px;
@@ -440,6 +436,11 @@ body {
 /* Customers Section */
  .customers {
     margin-bottom: 176px;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    
 }
 
 .customers-block {
