@@ -1,6 +1,5 @@
-.download {
+.mob_app {
     &__button {
-      background: $primary-color;
       color: white;
       padding: $padding;
       border-radius: 4px;
@@ -10,3 +9,51 @@
       }
     }
   }
+
+.mob_app__block {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+} 
+.mob_app {
+  padding-top: 166px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 135.5px;
+}
+
+.mob_app__content {
+  max-width: 420px;
+}
+
+.mob_app__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 156%;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.mob_app__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 167%;
+  color: #7d7987;
+  margin-bottom: 40px;
+}
+
+.mob_app__btn {
+  width: 200px;
+  height: 56px;
+  border-radius: 55px;
+  border: 2px solid #458ff6;
+  background-color: #fff;
+  color: #458ff6;
+  cursor: pointer;
+}
+.mob_app__btn:hover {
+  background-color: var(--secondary-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 130, 244, 0.3);
+}

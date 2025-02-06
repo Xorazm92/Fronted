@@ -8,3 +8,52 @@
       padding: $padding;
     }
   }
+
+  .main_header {
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--light-text);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.main_header__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.main_header__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+}
+
+.main_header__link {
+  text-decoration: none;
+  color: var(--dark-text);
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.main_header__link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--primary-blue);
+  transition: width 0.3s ease;
+}
+
+.main_header__link:hover {
+  color: var(--primary-blue);
+}
+
+.main_header__link:hover::after {
+  width: 100%;
+}
+
