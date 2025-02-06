@@ -1,0 +1,9 @@
+.footer {
+    background: $secondary-color;
+    color: white;
+    padding: $padding * 2;
+    
+    &__content {
+      @include flex-center;
+    }
+  }
