@@ -1,0 +1,22 @@
+.costumer__block {
+    height: 425px; 
+    display: flex; 
+    align-items: center; 
+    gap: 50px; 
+    background-color: teal;
+    padding: 20px; 
+    border-radius: 20px;
+}
+
+.costumer__content {
+    color: rgb(37, 34, 34);
+}
+
+.costumer__title {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.costumer__text {
+    font-size: 16px; 
+}

@@ -432,15 +432,116 @@ body {
           box-shadow: 0 6px 8px rgba(0, 130, 244, 0.3);
 }
 
-.check__item {
+.costumer__block {
+  height: 425px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
-  margin-bottom: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  background-color: teal;
+  padding: 20px;
+  border-radius: 20px;
 }
-.check__icon {
-  color: green;
+
+.costumer__content {
+  color: rgb(37, 34, 34);
+}
+
+.costumer__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.costumer__text {
+  font-size: 16px;
+}
+
+.article {
+  padding-top: 260px;
+}
+
+.article__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 156%;
+  color: #000;
+  margin-bottom: 26px;
+}
+
+.article__underline {
+  margin-bottom: 107px;
+}
+
+.article__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 35px;
+  margin-bottom: 70px;
+}
+
+.article__card {
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 40px 50px 0 rgba(229, 233, 246, 0.4);
+          box-shadow: 10px 40px 50px 0 rgba(229, 233, 246, 0.4);
+  overflow: hidden;
+}
+
+.article__img {
+  margin-bottom: 25px;
+}
+
+.image {
+  width: 100%;
+}
+
+.article__content {
+  padding-left: 33px;
+  padding-right: 75px;
+  padding-bottom: 35px;
+}
+
+.article__sub_title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 152%;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.article__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 175%;
+  color: #7d7987;
+  margin-bottom: 25px;
+}
+
+.article__link {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 165%;
+  color: #4089ed;
+}
+
+.article__btn_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px;
 }
 
 .footer {
