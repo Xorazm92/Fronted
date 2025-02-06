@@ -1,0 +1,11 @@
+.hero {
+    @include flex-center;
+    min-height: 400px;
+    background: linear-gradient(to right, $primary-color, lighten($primary-color, 20%));
+    color: white;
+    
+    &__content {
+      text-align: center;
+    }
+  }
+  

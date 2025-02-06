@@ -1,0 +1,9 @@
+.service {
+    padding: $padding;
+    border: 1px solid #eee;
+    
+    &__icon {
+      font-size: 2rem;
+      color: $primary-color;
+    }
+  }

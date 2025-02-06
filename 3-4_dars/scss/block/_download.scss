@@ -1,0 +1,12 @@
+.download {
+    &__button {
+      background: $primary-color;
+      color: white;
+      padding: $padding;
+      border-radius: 4px;
+      
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }

@@ -1,0 +1,11 @@
+.check {
+    &__item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    
+    &__icon {
+      color: green;
+    }
+  }
