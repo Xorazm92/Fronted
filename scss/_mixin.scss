@@ -1,0 +1,21 @@
+.btn_block {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn{
+    width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    border: 2px solid #458ff6;
+    color: #f3f4f7;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: var(--secondary-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 130, 244, 0.3);
+  }
+  

@@ -1,0 +1,32 @@
+html{
+    box-sizing: border-box;
+}
+*, 
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+h1,h2,h3,h4{
+    margin: 0;
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+}
+.container{
+    max-width: 1110;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+*{
+    background-color:#014E56;
+}

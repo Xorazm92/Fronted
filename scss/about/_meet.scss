@@ -1,0 +1,24 @@
+.meet__block {
+    margin-top: 20px;
+    border: 2px solid yellowgreen;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* 3 ta ustun, har biri teng kenglikda */
+    grid-auto-rows: auto;
+    gap: 30px; /* grid-gap va gap bir xil xususiyat, shuning uchun faqat bitta ishlatiladi */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* "card" effektini qo'shadi */
+    padding: 16px;
+    text-align: center;
+}
+
+.item {
+    background-color: #012F34;
+    border: 2px solid #e7e7e7; /* Takroriy border o'chirildi */
+    border-radius: 4px;
+    padding: 20px; /* Padding qiymati to'g'rilandi */
+}
+
+@media screen and (max-width: 600px) {
+    .meet__block {
+        grid-template-columns: 1fr; /* Kichik ekranlarda 1 ta ustun */
+    }
+}
