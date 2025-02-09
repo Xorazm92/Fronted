@@ -1,0 +1,62 @@
+.main-header {
+    padding-top: 48px;
+}
+
+/* Mobil menyu tugmasi (faqat kichik ekranlar uchun) */
+.main-header__menu {
+    width: 20px;
+    height: 17px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-image: url("../images/burger_menu.svg");
+    background-size: contain; /* Rasmning to‘liq chiqishini ta’minlaydi */
+}
+
+/* Header bloklari joylashuvi */
+.main-header__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navigatsiya menyusi (standart holatda yashirilgan) */
+.main-header__nav {
+    display: none; /* Mobilda menyu yashiriladi */
+    gap: 48px;
+}
+
+/* Navigatsiya menyusi elementlari */
+.main-header__nav-item {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #FFFFFF;
+}
+
+/* Tugma dizayni */
+.main-header__btn {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+    padding: 10px 32px;
+    background-color: transparent;
+    display: none; /* Mobilda tugma yashiriladi */
+}
+
+/* Katta ekranlar uchun (768px dan boshlab) */
+@media screen and (min-width: 768px) {
+    .main-header__nav {
+        display: flex;
+        gap: 40px;
+    }
+    .main-header__btn {
+        display: inline-block;
+    }
+    .main-header__menu {
+        display: none; /* Katta ekranda burger menyu yashiriladi */
+    }
+}

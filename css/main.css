@@ -1,0 +1,273 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Livvic", serif;
+  background-color: #014E56;
+}
+
+.container {
+  max-width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.hero {
+  padding-top: 80px;
+}
+
+.hero__block {
+  padding-bottom: 197px;
+  background-repeat: no-repeat;
+  background-image: url("../images/hero_bg.svg");
+  background-position: center bottom;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  text-align: center;
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.hero__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 64px;
+    line-height: 87%;
+    max-width: 375px;
+    margin-bottom: 24px;
+  }
+  .hero__text {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  .hero {
+    padding-top: 112px;
+  }
+  .hero__block {
+    padding-bottom: 256px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .hero {
+    text-align: start;
+  }
+  .hero__title {
+    margin: 0;
+    font-size: 100px;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+  .hero__text {
+    margin: 0;
+  }
+  .hero__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-position: right bottom;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+}
+.build {
+  background-color: #012f34;
+  padding-top: 100px;
+  padding-bottom: 64px;
+  background-repeat: no-repeat;
+  background-image: url("../../../images/build_bg.svg");
+  background-position: right top;
+}
+
+.build__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: #fff;
+  max-width: 240px;
+  margin-bottom: 56px;
+}
+
+.build__img {
+  margin-bottom: 16px;
+}
+
+.build__list__item:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.build__list__item {
+  text-align: center;
+}
+
+.build__list__item__text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 167%;
+  text-align: start;
+  color: #fff;
+}
+
+.build__list__item__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: start;
+  color: #f67e7e;
+}
+
+.build__block {
+  max-width: 573px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .build__list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+    gap: 23px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .build__title {
+    max-width: 445px;
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .build__block {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .build__list {
+    max-width: 540px;
+  }
+  .build {
+    padding-top: 198px;
+    padding-bottom: 140px;
+    background-position: right bottom;
+  }
+}
+.main-header {
+  padding-top: 48px;
+}
+
+/* Mobil menyu tugmasi (faqat kichik ekranlar uchun) */
+.main-header__menu {
+  width: 20px;
+  height: 17px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-image: url("../images/burger_menu.svg");
+  background-size: contain; /* Rasmning to‘liq chiqishini ta’minlaydi */
+}
+
+/* Header bloklari joylashuvi */
+.main-header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* Navigatsiya menyusi (standart holatda yashirilgan) */
+.main-header__nav {
+  display: none; /* Mobilda menyu yashiriladi */
+  gap: 48px;
+}
+
+/* Navigatsiya menyusi elementlari */
+.main-header__nav-item {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  color: #FFFFFF;
+}
+
+/* Tugma dizayni */
+.main-header__btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 24px;
+  padding: 10px 32px;
+  background-color: transparent;
+  display: none; /* Mobilda tugma yashiriladi */
+}
+
+/* Katta ekranlar uchun (768px dan boshlab) */
+@media screen and (min-width: 768px) {
+  .main-header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+  }
+  .main-header__btn {
+    display: inline-block;
+  }
+  .main-header__menu {
+    display: none; /* Katta ekranda burger menyu yashiriladi */
+  }
+}/*# sourceMappingURL=main.css.map */
