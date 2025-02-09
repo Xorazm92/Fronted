@@ -1,0 +1,230 @@
+@use "../mixin" as *;
+
+.contact-hero {
+  padding-top: 40px;
+  padding-bottom: 88px;
+  background-color: var(--main-hero-background-color);
+  background-image: url("../images/contactherodeco.svg");
+  background-size: 112px 200px;
+  background-position: right calc(50% + 485px);
+  background-repeat: no-repeat;
+}
+
+.contact-hero__wrapper {
+  @include flexbox ($justify:null);
+}
+
+.contact-hero__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: var(--main-title-font-weight);
+  line-height: 40px; 
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.contact-hero__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: var(--main-started-background-color);
+  text-align: center;
+  font-size: var(--main-title-font-size);
+  font-weight: var(--main-title-font-weight);
+  line-height: 48px; 
+}
+
+.contact-hero__list {
+  @include flexbox ($justify:null, $align:null);
+  @include list-unstyled;
+  margin-bottom: 56px;
+  row-gap: 24px;
+}
+
+.contact-hero__item {
+  @include flexbox ($direction:null, $justify:null);
+  color: var(--main-text-color);
+  font-size: 12px;
+  font-weight: var(--main-title-font-weight);
+  line-height: 20px;
+}
+
+.contact-hero__item-wrapper {
+  max-width: 158px;
+  width: 100%;
+}
+
+.contact-hero__item::before {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  content: "";
+  background-size: 72px 72px;
+  background-size: 60px 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-hero__item:first-child::before {
+  background-image: url("../images/talent.svg");
+}
+
+.contact-hero__item:nth-child(2)::before {
+  background-image: url("../images/software.svg");
+}
+
+.contact-hero__item:nth-child(3)::before {
+  background-image: url("../images/innovation.svg");
+}
+
+.contact-hero__form {
+  @include flexbox ($justify:null, $align:null);
+  max-width: 540px;
+  width: 100%;
+  row-gap: 24px;
+}
+
+.contact-hero__input {
+  width: 100%;
+  padding-bottom: 16px;
+  padding-left: 14px;
+  font-size: var(--main-text-font-size);
+  font-weight: var(--main-text-font-weight);
+  line-height: var(--main-text-line-height);
+  letter-spacing: -0.115px;
+  color: var(--main-text-color);
+  border: none;
+  border-bottom: 1px solid var(--main-text-color);
+  background-color: var(--main-hero-background-color);
+  @include transition ($property:border-bottom-color);
+}
+
+.contact-hero__input:hover {
+  border-bottom-color: var(--main-button-background-color);
+}
+
+.contact-hero__input::placeholder {
+  color: var(--main-text-color);
+  opacity: 0.6;
+}
+
+.contact-hero__textarea {
+  width: 100%;
+  padding-bottom: 58px;
+  padding-left: 14px;
+  font-size: var(--main-text-font-size);
+  font-weight: var(--main-text-font-weight);
+  line-height: 12.5px;
+  letter-spacing: -0.115px;
+  color: var(--main-text-color);
+  resize: none;
+  border: none;
+  border-bottom: 1px solid var(--main-text-color);
+  background-color: var(--main-hero-background-color);
+  @include transition ($property:border-bottom-color);
+}
+
+.contact-hero__textarea:hover {
+  border-bottom-color: var(--main-button-background-color);
+}
+
+.contact-hero__textarea::placeholder {
+  color: var(--main-text-color);
+  opacity: 0.6;
+}
+
+.contact-hero__button{
+  display: inline-block;
+  width: 123px;
+  padding: 9px 32px 11px;
+  font-size: var(--main-services-title-font-size);
+  font-weight: var(--main-text-font-weight);
+  line-height: var(--main-hero-text-line-height); 
+  color: var(--main-teams-background-color);
+  border: 2px solid var(--main-text-color);
+  border-radius: 24px;
+}
+
+@media only screen and (min-width:375px) {
+
+  .contact-hero {
+    background-position: right calc(50% + 505px);
+  }
+
+  .contact-hero__item {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .contact-hero__item-wrapper {
+    max-width: 232px;
+  }
+
+  .contact-hero__item::before {
+    width: 72px;
+    height: 72px;
+    margin-right: 23px;
+    background-size: 72px 72px;
+  }
+
+}
+
+@media only screen and (min-width:600px) {
+
+  .contact-hero {
+    padding-top: 56px;
+    padding-bottom: 112px;
+    background-image: url("../images/contactherodeco.svg"), url("../images/contactherocircle.svg");
+    background-size: 112px 200px, 100px 200px;
+    background-position: right bottom, left top;
+  }
+
+  .contact-hero__title {
+    margin-bottom: 24px;
+    font-size: 64px;
+    line-height: 56px;
+  }
+
+  .contact-hero__text {
+    margin-bottom: 24px;
+  }
+
+  .contact-hero__list {
+    margin-bottom: 64px;
+  }
+
+  .contact-hero__item-wrapper {
+    max-width: 358px;
+  }
+
+}
+
+@media only screen and (min-width:1100px) {
+  
+  .contact-hero {
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+
+  .contact-hero__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-hero__title {
+    margin-bottom: 16px;
+    line-height: 100px;
+    text-align: start;
+  }
+
+  .contact-hero__text {
+    margin-bottom: 32px;
+    text-align: start;
+  }
+
+  .contact-hero__list {
+    row-gap: 8px;
+    margin-bottom: 0;
+  }
+}

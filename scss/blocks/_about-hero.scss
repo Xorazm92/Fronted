@@ -1,0 +1,107 @@
+@use "../mixin" as m;
+@use "../variables" as v;
+
+.about-hero {
+  padding-top: 40px;
+  padding-bottom: 108px;
+  background: var(--main-hero-background-color);
+  background-image: url("../images/group.svg");
+  background-repeat: no-repeat;
+  background-position: bottom -100px right;
+}
+
+.about-hero__wrapper {
+  @include m.flexbox ($justify: null);
+}
+
+.about-hero__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: var(--main-title-font-weight);
+  line-height: 40px;
+  color: var(--main-text-color);
+}
+
+.about-hero__desc-wrapper {
+  max-width: 458px;
+  width: 100%;
+}
+
+.about-hero__desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: var(--main-text-font-size);
+  font-weight: var(--main-text-font-weight);
+  line-height: var(--main-hero-text-line-height);
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .about-hero {
+    padding-top: 56px;
+    padding-bottom: 112px;
+    background-position: bottom right;
+  }
+
+  .about-hero__title {
+    margin-bottom: 24px;
+    font-size: 64px;
+    line-height: 56px;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .about-hero {
+    padding-top: 45px;
+    padding-bottom: 120px;
+  }
+
+  .about-hero__wrapper {
+    @include m.flexbox ($direction: row, $align: start);
+  }
+
+  .about-hero__title {
+    margin-bottom: 0px;
+    font-size: 64px;
+    line-height: 100px;
+  }
+
+  .about-hero__desc-wrapper {
+    max-width: 688px;
+    margin-right: 86px;
+  }
+
+  .about-hero__desc-wrapper::before {
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin-bottom: 40px;
+    background-color: var(--main-started-background-color);
+    content: "";
+  }
+
+  .about-hero__desc {
+    font-size: var(--main-services-title-font-size);
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-hero__desc-wrapper {
+    margin-right: 70px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .about-hero__desc-wrapper {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .about-hero__desc-wrapper {
+    margin-right: 0;
+  }
+}

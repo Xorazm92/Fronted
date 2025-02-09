@@ -1,0 +1,129 @@
+@use "../mixin" as m;
+@use "../variables" as v;
+
+.buyers-section {
+  padding-top: 88px;
+  padding-bottom: 88px;
+  background-color: var(--main-services-background-color);
+  background-image: url("../images/groupcircle.svg");
+  background-repeat: no-repeat;
+  background-position: top -100px left -100px;
+}
+
+.buyers-section__title {
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-size: 32px;
+  font-weight: var(--main-title-font-weight);
+  line-height: 32px;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.buyers-section__wrapper {
+  @include m.flexbox ($justify:null);
+  row-gap: 57px;
+}
+
+.buyers-section__img:first-child {
+ width: 147px;
+ height: 25px;
+}
+
+.buyers-section__img:nth-child(2) {
+  width: 162px;
+  height: 20px;
+ }
+
+ .buyers-section__img:nth-child(3) {
+  width: 160px;
+  height: 25px;
+ }
+
+ .buyers-section__img:nth-child(4) {
+  width: 147px;
+  height: 25px;
+ }
+
+ .buyers-section__img:last-child {
+  width: 87px;
+  height: 40px;
+ }
+
+@media only screen and (min-width: 768px) {
+  .buyers-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: top -100px left;
+  }
+
+  .buyers-section__title {
+    margin-bottom: 48px;
+  }
+
+  .buyers-section__wrapper {
+    @include m.flexbox ($direction:row, $justify: space-between);
+  }
+
+  .buyers-section__img:first-child {
+    width: 103px;
+    height: 17px;
+   }
+   
+   .buyers-section__img:nth-child(2) {
+     width: 114px;
+     height: 14px;
+    }
+   
+    .buyers-section__img:nth-child(3) {
+     width: 112px;
+     height: 17px;
+    }
+   
+    .buyers-section__img:nth-child(4) {
+     width: 103px;
+     height: 17px;
+    }
+   
+    .buyers-section__img:last-child {
+     width: 61px;
+     height: 28px;
+    }
+}
+
+@media only screen and (min-width: 1030px) {
+  .buyers-section {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-position: top left;
+  }
+
+  .buyers-section__title {
+    margin-bottom: 64px;
+  }
+
+  .buyers-section__img:first-child {
+    width: auto;
+    height: auto;
+   }
+   
+   .buyers-section__img:nth-child(2) {
+     width: auto;
+     height: auto;
+    }
+   
+    .buyers-section__img:nth-child(3) {
+     width: auto;
+     height: auto;
+    }
+   
+    .buyers-section__img:nth-child(4) {
+     width: auto;
+     height: auto;
+    }
+   
+    .buyers-section__img:last-child {
+     width: auto;
+     height: auto;
+    }
+}

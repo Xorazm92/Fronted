@@ -1,0 +1,197 @@
+@use "../mixin" as m;
+@use "../variables" as v;
+
+.director-section {
+  padding-top: 88px;
+  padding-bottom: 116px;
+  background-color: var(--main-teams-background-color);
+  background-image: url("../images/groupgreen.svg"), url("../images/groupcopy.svg");
+  background-repeat: no-repeat;
+  background-position: top -100px left, right bottom;
+}
+
+.director-section__title {
+  margin-top: 0;
+  margin-bottom: 48px;
+  font-size: var(--main-title-font-size);
+  font-weight: var(--main-title-font-weight);
+  line-height: var(--main-title-line-height);
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.director-section__list {
+  @include m.flexbox ($justify: null);
+  row-gap: 52px;
+  @include m.list-unstyled;
+}
+
+.director-section__item {
+  position: relative;
+  max-width: 327px;
+  width: 100%;
+  padding: 32px 24px 56px;
+  background-color: var(--main-services-background-color);
+}
+
+.director-section__item:first-child:before {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 16px;
+  background-image: url("../images/nikita.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  content: "";
+}
+
+.director-section__item:nth-child(2):before {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 16px;
+  background-image: url("../images/cristian.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  content: "";
+}
+
+.director-section__item:nth-child(3):before {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 16px;
+  background-image: url("../images/cruz.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  content: "";
+}
+
+.director-section__item:nth-child(4):before {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 16px;
+  background-image: url("../images/drake.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  content: "";
+}
+
+.director-section__item:nth-child(5):before {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 16px;
+  background-image: url("../images/griffin.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  content: "";
+}
+
+.director-section__item:last-child:before {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 16px;
+  background-image: url("../images/aden.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  content: "";
+}
+
+.director-section__item-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: var(--main-services-title-font-size);
+  font-weight: var(--main-title-font-weight);
+  line-height: var(--main-hero-text-line-height);
+  text-align: center;
+  color: var(--main-button-background-color);
+}
+
+.director-section__item-desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: var(--main-text-font-size);
+  line-height: var(--main-text-line-height);
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.director-section__btn {
+  position: absolute;
+  bottom: -28px;
+  left: calc(50% - 28px);
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 100%;
+  background-color: var(--main-started-background-color);
+  background-image: url("../images/combinedshape.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.director-section__btn:hover {
+  background-color: var(--main-button-background-color);
+}
+
+.director-section__link {
+  color: #fff;
+}
+
+.director-section__link:hover {
+  color: #f67e7e;
+}
+
+@media only screen and (min-width: 768px) {
+  .director-section {
+    padding-top: 100px;
+    padding-bottom: 128px;
+    background-position: top left, right bottom;
+  }
+
+  .director-section__list {
+    @include m.flexbox ($direction: row, $justify: center);
+    gap: 76px 11px;
+    flex-wrap: wrap;
+  }
+
+  .director-section__item {
+    max-width: 281px;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .director-section {
+    padding-top: 140px;
+    padding-bottom: 168px;
+  }
+
+  .director-section__list {
+    column-gap: 30px;
+  }
+
+  .director-section__item {
+    max-width: 310px;
+  }
+
+  .director-section__title {
+    margin-bottom: 64px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .director-section__item {
+    max-width: 350px;
+  }
+}
