@@ -1,0 +1,17 @@
+{
+  "name": "fronted-6_dars",
+  "version": "1.0.0",
+  "main": "todo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/main.scss:css/main.css --watch",
+    "build": "sass scss/main.scss:css/main.css --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

@@ -1,0 +1,50 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+.main-header {
+  padding-top: 48px;
+}
+
+/* Mobil menyu tugmasi */
+.main-header__menu {
+  width: 20px;
+  height: 17px;
+  background: transparent url("../images/burger_menu.svg") no-repeat center;
+  background-size: contain;
+  border: none;
+}
+
+/* Header bloklari joylashuvi */
+.main-header__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navigatsiya menyusi (mobil holatda yashirin) */
+.main-header__nav {
+  display: none;
+  gap: 48px;
+}
+
+/* Navigatsiya menyusi elementlari */
+.main-header__nav-item {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  color: variables.$primary-color;
+}
+
+/* Katta ekranlar uchun */
+@include mixins.desktop {
+  .main-header__nav {
+    display: flex;
+    gap: 40px;
+  }
+  .main-header__btn {
+    display: inline-block;
+  }
+  .main-header__menu {
+    display: none;
+  }
+}
