@@ -1,0 +1,16 @@
+.navbar {
+    padding: 15px 0;
+    border-top: 2px solid #00000024;
+    border-bottom: 2px solid #00000024;
+    background-color: #fcfcfc;
+}
+.navbar__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar__link {
+    font-weight: 600;
+    font-size: 20px;
+    color: #3f51b5;
+}
