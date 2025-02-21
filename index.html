@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bayan Sulu - Интернет-магазин ковров</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <!-- Header qismi -->
+      <header class="header">
+        <div class="logo">
+          <img src="./src/assets/logo.png" alt="Bayan Sulu">
+        </div>
+        <div class="location">
+          <span class="material-icons">location_on</span>
+          <span>Алматы</span>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Поиск по товарам">
+          <span class="material-icons">search</span>
+        </div>
+        <div class="user-actions">
+          <a href="#profile"><span class="material-icons">person</span></a>
+          <a href="#favorites"><span class="material-icons">favorite_border</span></a>
+          <a href="#cart"><span class="material-icons">shopping_cart</span></a>
+        </div>
+      </header>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#kovri">Ковры</a></li>
+          <li><a href="#kovri">Ковры</a></li>
+          <li><a href="#kovri">Ковры</a></li>
+          <li><a href="#kovri">Ковры</a></li>
+          <li><a href="#kovri">Ковры</a></li>
+          <li><a href="#kovri">Ковры</a></li>
+          <li><a href="#kovri">Ковры</a></li>
+        </ul>
+      </nav>
+
+      <!-- Banner section -->
+      <section class="banner">
+        <div class="banner-content">
+          <h1>Новая коллекция ковров Venetta</h1>
+          <button class="view-more">СМОТРЕТЬ ВСЕ</button>
+        </div>
+        <div class="banner-images">
+          <img src="./src/assets/Venetta.png" alt="Venetta collection">
+          <img src="./src/assets/product-2.png" alt="Venetta collection">
+        </div>
+      </section>
+
+      <!-- Новинки section -->
+      <section class="new-items">
+        <div class="section-header">
+          <h2>Новинки</h2>
+          <a href="#" class="see-all">Все новинки</a>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="badge">Новинка</div>
+            <button class="favorite-btn"><span class="material-icons">favorite_border</span></button>
+            <img src="./src/assets/Venetta.png" alt="Aster Q893A LYIZON">
+            <div class="product-info">
+              <h3>Aster Q893A LYIZON LYIZON</h3>
+              <p class="size">Размер: 60x100</p>
+              <p class="manufacturer">Производитель: Казахстан</p>
+              <div class="rating">★★★★☆ <span>(0 отзывов)</span></div>
+            </div>
+          </div>
+          <!-- Repeat for other new products -->
+        </div>
+      </section>
+
+      <!-- Скидки section -->
+      <section class="sales">
+        <div class="section-header">
+          <h2>Скидки</h2>
+          <a href="#" class="see-all">Все скидки</a>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="discount-badge">-20%</div>
+            <button class="favorite-btn"><span class="material-icons">favorite_border</span></button>
+            <img src="./src/assets/product-2.png" alt="ASYC Q893A LYIZON">
+            <div class="product-info">
+              <h3>ASYC Q893A LYIZON</h3>
+              <p class="size">Размер: 60x100</p>
+              <p class="manufacturer">Производитель: Казахстан</p>
+              <div class="rating">★★★★☆ <span>(0 отзывов)</span></div>
+              <div class="price">
+                <span class="old-price">120,000 ₸</span>
+                <span class="new-price">100,000 ₸</span>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat for other sale products -->
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>Каталог товаров</h3>
+            <ul>
+              <li><a href="#">Ковры</a></li>
+              <li><a href="#">Дорожки</a></li>
+              <li><a href="#">Циновки</a></li>
+            </ul>
+          </div>
+          <!-- More footer columns... -->
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
